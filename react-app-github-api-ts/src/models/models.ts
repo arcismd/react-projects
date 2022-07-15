@@ -18,12 +18,14 @@ export interface IUser {
         type: string;
         site_admin: boolean;
         score: number;
+        children?: React.ReactNode;
     }
 
 export interface ServerResponse<T> {
         total_count: number;
         incomplete_results: boolean;
         items: T[];
+        children?: React.ReactNode;
 }
 
 
@@ -48,6 +50,7 @@ export interface IOwner {
         received_events_url: string;
         type: string;
         site_admin: boolean;
+        children?: React.ReactNode;
 }
 
 export interface License {
@@ -56,6 +59,7 @@ export interface License {
         spdx_id: string;
         url: string;
         node_id: string;
+        children?: React.ReactNode;
 }
 
 export interface IRepo {
@@ -137,6 +141,7 @@ export interface IRepo {
         open_issues: number;
         watchers: number;
         default_branch: string;
+        children?: React.ReactNode;
 }
 
 
