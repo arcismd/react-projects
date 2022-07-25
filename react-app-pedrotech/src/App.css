@@ -36,3 +36,11 @@
     transform: rotate(360deg);
   }
 }
+
+.name {
+  color: blue;
+}
+
+button {
+  margin: 5px
+}
